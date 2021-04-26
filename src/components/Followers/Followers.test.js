@@ -1,8 +1,12 @@
-import { queryAllByText, render, screen } from "@testing-library/react";
+import { getAllByText, queryAllByText, render, screen } from "@testing-library/react";
 import Followers from "./Followers";
 
 test('Should render followers by platform cards', () => {
-    render(<Followers />);
-    expect(screen.queryAllByText("Followers")).toBeInTheDocument()
+    const {getByTestId} = render(<Followers />);
+    const followers = getByTestId("followers");
+    expect(followers).toBeInTheDocument(); 
+    
+    const cards = getAllByText(followers, "Followers");
+    expect(cards).toHaveLength(4)
 
 });
