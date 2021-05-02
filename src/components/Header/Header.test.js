@@ -8,3 +8,4 @@ test('header contains title and followers count ', () => {
   expect(screen.getByRole('followers-count')).toBeTruthy();
 
 });
+
