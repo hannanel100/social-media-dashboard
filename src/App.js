@@ -7,10 +7,10 @@ import Toggle from "./components/UI/Toggle/Toggle";
 function App() {
   return (
     <div className='App'>
-     <Header />
-     <Toggle />
-     <Followers/>
-     <TodayOverview />
+      <Header />
+      <Toggle />
+      {/* <Followers/>
+     <TodayOverview /> */}
     </div>
   );
 }
