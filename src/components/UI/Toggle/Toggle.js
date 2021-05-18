@@ -10,6 +10,7 @@ const CheckBoxWrapper = styled.div`
 `;
 const CheckBoxLabel = styled.label`
   position: absolute;
+  content: "Dark Mode";
   top: 0;
   left: 0;
   width: 42px;
